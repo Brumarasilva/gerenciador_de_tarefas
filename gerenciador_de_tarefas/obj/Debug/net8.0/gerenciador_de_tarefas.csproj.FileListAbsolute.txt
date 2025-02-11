@@ -1,0 +1,15 @@
+c:\Users\Alunos\Documents\bruna\gerenciador_de_tarefas\gerenciador_de_tarefas\bin\Debug\net8.0\gerenciador_de_tarefas.exe
+C:\Users\Alunos\Documents\bruna\gerenciador_de_tarefas\gerenciador_de_tarefas\bin\Debug\net8.0\gerenciador_de_tarefas.deps.json
+C:\Users\Alunos\Documents\bruna\gerenciador_de_tarefas\gerenciador_de_tarefas\bin\Debug\net8.0\gerenciador_de_tarefas.runtimeconfig.json
+c:\Users\Alunos\Documents\bruna\gerenciador_de_tarefas\gerenciador_de_tarefas\bin\Debug\net8.0\gerenciador_de_tarefas.dll
+c:\Users\Alunos\Documents\bruna\gerenciador_de_tarefas\gerenciador_de_tarefas\bin\Debug\net8.0\gerenciador_de_tarefas.pdb
+c:\Users\Alunos\Documents\bruna\gerenciador_de_tarefas\gerenciador_de_tarefas\obj\Debug\net8.0\gerenciador_de_tarefas.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Alunos\Documents\bruna\gerenciador_de_tarefas\gerenciador_de_tarefas\obj\Debug\net8.0\gerenciador_de_tarefas.AssemblyInfoInputs.cache
+c:\Users\Alunos\Documents\bruna\gerenciador_de_tarefas\gerenciador_de_tarefas\obj\Debug\net8.0\gerenciador_de_tarefas.AssemblyInfo.cs
+c:\Users\Alunos\Documents\bruna\gerenciador_de_tarefas\gerenciador_de_tarefas\obj\Debug\net8.0\gerenciador_de_tarefas.csproj.CoreCompileInputs.cache
+c:\Users\Alunos\Documents\bruna\gerenciador_de_tarefas\gerenciador_de_tarefas\obj\Debug\net8.0\gerenciador_de_tarefas.sourcelink.json
+c:\Users\Alunos\Documents\bruna\gerenciador_de_tarefas\gerenciador_de_tarefas\obj\Debug\net8.0\gerenciador_de_tarefas.dll
+c:\Users\Alunos\Documents\bruna\gerenciador_de_tarefas\gerenciador_de_tarefas\obj\Debug\net8.0\refint\gerenciador_de_tarefas.dll
+c:\Users\Alunos\Documents\bruna\gerenciador_de_tarefas\gerenciador_de_tarefas\obj\Debug\net8.0\gerenciador_de_tarefas.pdb
+C:\Users\Alunos\Documents\bruna\gerenciador_de_tarefas\gerenciador_de_tarefas\obj\Debug\net8.0\gerenciador_de_tarefas.genruntimeconfig.cache
+C:\Users\Alunos\Documents\bruna\gerenciador_de_tarefas\gerenciador_de_tarefas\obj\Debug\net8.0\ref\gerenciador_de_tarefas.dll
