@@ -1,26 +1,41 @@
+using System.Security.Cryptography.X509Certificates;
+using Tarefas;
+
 namespace GerenciarTarefa
+
 {
     class Gerenciamento
     {
         
-        public static void AdicionarTarefa()
+        public static List<Tarefa> tarefas =new List<Tarefa>();
+        int contadorId = 1;
+        public void AdicionarTarefa(string descricao)
         {
-            Console.WriteLine("insira tarefas");
-
+            var novaTarefa = new Tarefa(contadorId++, descricao);
+            
+            tarefas.Add(novaTarefa);
 
         }
         public static void ListarTarefas()
         {
-            Console.WriteLine("Tarefas: ");
+            Console.WriteLine("ListarTarefas: ");
+            foreach (var tarefa in tarefas)
+            {
+                Console.WriteLine($"Digite a descrição da tarefa:  ");
+            }
+            
             
         }
         public static void ConcluirTarefa()
         {
+            
+
 
         }
         public static void RemoverTarefa()
         {
-
+          
+            
         }
         public static void Sair()
         {
