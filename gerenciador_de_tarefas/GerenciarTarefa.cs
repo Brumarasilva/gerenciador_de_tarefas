@@ -1,4 +1,5 @@
 using System.Security.Cryptography.X509Certificates;
+using Microsoft.VisualBasic;
 using Tarefas;
 
 namespace GerenciarTarefa
@@ -21,7 +22,7 @@ namespace GerenciarTarefa
             Console.WriteLine("ListarTarefas: ");
             foreach (var tarefa in tarefas)
             {
-                Console.WriteLine($"Digite a descrição da tarefa:  ");
+                Console.WriteLine($"Digite a descrição da tarefa:  {tarefas} ");
             }
             
             
