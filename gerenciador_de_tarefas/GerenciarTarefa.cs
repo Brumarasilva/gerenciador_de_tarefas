@@ -74,7 +74,7 @@ namespace GerenciarTarefa
                     if (RemoverTarefa != null)
                     {
                         tarefas.Remove(RemoverTarefa);
-                        Console.WriteLine($"Tarefa '{RemoverTarefa.Descricao}' removida com sucesso!");
+                        Formatacao.Cor($"Tarefa '{RemoverTarefa.Descricao}' removida com sucesso!", ConsoleColor.Red);
                     }
                     else
                     {
@@ -91,7 +91,7 @@ namespace GerenciarTarefa
         }
         public static void Sair()
         {
-
+            Formatacao.Cor("Saindo...", ConsoleColor.Red);
         }
     }
 

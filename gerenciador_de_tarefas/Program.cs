@@ -49,7 +49,7 @@ while (true)
                 break;
             case "0":
                 opcaoValida = true;
-                Console.WriteLine("Sair");
+                
                 Gerenciamento.Sair();
                 return;
                 default:
