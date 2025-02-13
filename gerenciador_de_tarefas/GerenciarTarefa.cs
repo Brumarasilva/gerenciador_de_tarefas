@@ -34,19 +34,29 @@ namespace GerenciarTarefa
         public static void ConcluirTarefa()
         {
             {
-                Tarefa tarefa = tarefas.FirstOrDefault(t => t.Id == idTarefa);
+                Console.Write("Digite o ID da tarefa que deseja concluir: ");
 
-                if (tarefa != null)
+                // Lendo o ID do usuário
+                if (int.TryParse(Console.ReadLine(), out int idTarefa))
                 {
-                    tarefa.Concluida = true;
-                    Formatacao.Cor($"Tarefa '{tarefa.Descricao}' Tarefa concluída!", ConsoleColor.Green);
+                    // Agora a busca está correta
+                    Tarefa tarefa = tarefas.FirstOrDefault(t => t.Id == idTarefa);
+
+                    if (tarefa != null)
+                    {
+                        tarefa.Concluida = true;
+                        Formatacao.Cor($"Tarefa '{tarefa.Descricao}' foi concluída!", ConsoleColor.Green);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Tarefa não encontrada.");
+                    }
                 }
                 else
                 {
-                    Console.WriteLine("Tarefa não encontrada.");
+                    Console.WriteLine("ID inválido. Digite um número válido.");
                 }
             }
-
 
 
 
@@ -59,12 +69,12 @@ namespace GerenciarTarefa
                 // Lendo o ID do usuário
                 if (int.TryParse(Console.ReadLine(), out int idTarefa))
                 {
-                    Tarefa tarefaParaRemover = tarefas.FirstOrDefault(t => t.Id == idTarefa);
+                    Tarefa RemoverTarefa = tarefas.FirstOrDefault(t => t.Id == idTarefa);
 
-                    if (tarefaParaRemover != null)
+                    if (RemoverTarefa != null)
                     {
-                        tarefas.Remove(tarefaParaRemover);
-                        Console.WriteLine($"Tarefa '{tarefaParaRemover.Descricao}' removida com sucesso!");
+                        tarefas.Remove(RemoverTarefa);
+                        Console.WriteLine($"Tarefa '{RemoverTarefa.Descricao}' removida com sucesso!");
                     }
                     else
                     {
