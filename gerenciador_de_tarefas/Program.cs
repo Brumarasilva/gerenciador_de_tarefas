@@ -4,7 +4,9 @@ using Tarefas;
 using Layout;
 using System.ComponentModel;
 bool opcaoValida = false;
+ Console.Clear();
 while (true)
+
 {
     var Gerenciamento = new Gerenciamento();
 
@@ -23,6 +25,7 @@ while (true)
         switch (opcao)
         {
             case "1":
+                opcaoValida = true;
                 Console.WriteLine("Digite a descrição da tarefa: ");
                 string AddTarefa = Console.ReadLine();
 
@@ -30,22 +33,29 @@ while (true)
 
                 break;
             case "2":
+                opcaoValida = true;
                 Console.WriteLine("Teste Listar Tarefas");
                 Gerenciamento.ListarTarefas();
                 break;
             case "3":
+                opcaoValida = true;
                 Console.WriteLine("Teste Concluir Tarefa");
                 Gerenciamento.ConcluirTarefa();
                 break;
             case "4":
+                opcaoValida = true;
                 Console.WriteLine("Teste Remover Tarefa");
                 Gerenciamento.RemoverTarefa();
                 break;
-            case "5":
+            case "0":
+                opcaoValida = true;
                 Console.WriteLine("Sair");
                 Gerenciamento.Sair();
                 return;
-
+                default:
+                opcaoValida = false;
+                Console.WriteLine("Opção Inválida: Tente Novamente! ");
+                break;
         }
 
     }while(opcaoValida == false);

@@ -13,7 +13,6 @@ namespace Layout
 
         public static void ImprimirCabecalho()
         {
-            Console.Clear();
             Console.WriteLine("╔════════════════════════╗");
             Console.WriteLine("║ GERENCIADOR DE TAREFAS ║");
             Console.WriteLine("╚════════════════════════╝");
