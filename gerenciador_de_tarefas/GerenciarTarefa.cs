@@ -7,16 +7,17 @@ namespace GerenciarTarefa
 
 {
     class Gerenciamento
+    //
     {
 
-        public static List<Tarefa> tarefas = new List<Tarefa>();
-        private static int contadorId = 1;
-        public void AdicionarTarefa(string descricao)
+        public static List<Tarefa> tarefas = new List<Tarefa>();//esse código tem a função de criar a lista de tarefas (porém ela vai estar vazia ela vai aprecendo conforme o usuário adiciona no arquivo indivisual) 
+        private static int contadorId = 1; //essa função toda vez que o usuário adicionar uma tarefa vai ser listada do 1 adiante
+        public void AdicionarTarefa(string descricao)// Adicionar tarefa é o nome do método e o parâmetro descrição(string), que será a descrição da tarefa a ser adicionada na hora que tiver rodando o programa vai te pedir pra adicionar uma ou mais tarefas dependendo de quantas for adicionar.
         {
-            var novaTarefa = new Tarefa(contadorId++, descricao);
+            var novaTarefa = new Tarefa(contadorId++, descricao); //ao adicionar uma nova tarefa essas tarefas serão numeradas.
 
             tarefas.Add(novaTarefa);
-            Formatacao.Cor("Tarefa adicionada com sucesso! ", ConsoleColor.Green);
+            Formatacao.Cor("Tarefa adicionada com sucesso! ", ConsoleColor.Green); //de acordo com a frase ou letra colocada dentro do parentese com aspas duplas o programa vai mudar ela de cor.
 
         }
         public static void ListarTarefas()
