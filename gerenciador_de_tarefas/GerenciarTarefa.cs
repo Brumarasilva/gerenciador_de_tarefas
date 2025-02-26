@@ -23,10 +23,10 @@ namespace GerenciarTarefa
         public static void ListarTarefas()
         {
 
-            Console.WriteLine("Tarefas: ");
+            Console.WriteLine("Tarefas: ");//o Console.WriteLine vai imprimir a mensagem para o usuário na hora que estiver rodando
             foreach (var tarefa in tarefas)
             {
-                Formatacao.Cor($"{(tarefa.Concluida ? "[x]" : "[ ]")} ID: {tarefa.Id} - {tarefa.Descricao}", ConsoleColor.Yellow);
+                Formatacao.Cor($"{(tarefa.Concluida ? "[x]" : "[ ]")} ID: {tarefa.Id} - {tarefa.Descricao}", ConsoleColor.Yellow);//Na hora que estiver rodando caso a tarefa estiver concluida o usuário vai avisar e o programa vai marcar um[x](Concluida) caso contrário [](Pendente). A Formatacao.Cor serva para que caso o usuário queira imprimir a mensagem com cor diferente.
 
             }
 
@@ -35,7 +35,7 @@ namespace GerenciarTarefa
         public static void ConcluirTarefa()
         {
             {
-                Console.Write("Digite o ID da tarefa que deseja concluir: ");
+                Console.Write("Digite o ID da tarefa que deseja concluir: ");//o Console.WriteLine vai imprimir a mensagem para o usuário na hora que estiver rodando
 
                 // Lendo o ID do usuário
                 if (int.TryParse(Console.ReadLine(), out int idTarefa))
@@ -65,14 +65,14 @@ namespace GerenciarTarefa
         public static void RemoverTarefa()
         {
             {
-                Console.Write("Digite o ID da tarefa que deseja remover: ");
+                Console.Write("Digite o ID da tarefa que deseja remover: ");// aqui o Console.Write imprime a mensagem para aparecer na hora de rodar para o usuário e ele responder
 
                 // Lendo o ID do usuário
-                if (int.TryParse(Console.ReadLine(), out int idTarefa))
+                if (int.TryParse(Console.ReadLine(), out int idTarefa))// caso o id seja válido o programa vai salvar a informação dentro desse código
                 {
-                    Tarefa RemoverTarefa = tarefas.FirstOrDefault(t => t.Id == idTarefa);
+                    Tarefa RemoverTarefa = tarefas.FirstOrDefault(t => t.Id == idTarefa);//o programa vai buscar a tarefa com o id(número) que o usuário informou e caso encontrado ele vai salvar dentro da variável RemoverTarefa e a tarefa vai ser removida.
 
-                    if (RemoverTarefa != null)
+                    if (RemoverTarefa != null)// neste caso se o programa buscar a tarefa selecionada pelo usuário vai dar nulo ou inválido.
                     {
                         tarefas.Remove(RemoverTarefa);
                         Formatacao.Cor($"Tarefa '{RemoverTarefa.Descricao}' removida com sucesso!", ConsoleColor.Red);
