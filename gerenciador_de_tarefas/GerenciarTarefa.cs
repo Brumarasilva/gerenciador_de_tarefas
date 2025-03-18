@@ -41,21 +41,21 @@ namespace GerenciarTarefa
                 if (int.TryParse(Console.ReadLine(), out int idTarefa))//essa parte vai permitir que, na hora que o código estiver rodando, o usuário consiga escrever as tarefas, e com isso elas vão ser numeradas.
                 {
                     // Agora a busca está correta
-                    Tarefa tarefa = tarefas.FirstOrDefault(t => t.Id == idTarefa);
+                    Tarefa tarefa = tarefas.FirstOrDefault(t => t.Id == idTarefa);//busca a primeira tarefa na lista tarefas com o ID fornecido e a armazena em tarefa, ou retorna null se não encontrar nenhuma tarefa com esse ID.
 
-                    if (tarefa != null)
+                    if (tarefa != null)//tem o objetivo de verifcar se o ID fornecido pelo usuário é válido
                     {
                         tarefa.Concluida = true;
-                        Formatacao.Cor($"Tarefa '{tarefa.Descricao}' foi concluída!", ConsoleColor.Green);
+                        Formatacao.Cor($"Tarefa '{tarefa.Descricao}' foi concluída!", ConsoleColor.Green);//O usuário vai alterar a cor da descrição
                     }
                     else
                     {
-                        Console.WriteLine("Tarefa não encontrada.");
+                        Console.WriteLine("Tarefa não encontrada.");//impressão da mensagem
                     }
                 }
                 else
                 {
-                    Console.WriteLine("ID inválido. Digite um número válido.");
+                    Console.WriteLine("ID inválido. Digite um número válido.");//Caso o usuário digite um ID inválido o programa vai dar erro
                 }
             }
 
@@ -75,16 +75,16 @@ namespace GerenciarTarefa
                     if (RemoverTarefa != null)// neste caso se o programa buscar a tarefa selecionada pelo usuário vai dar nulo ou inválido.
                     {
                         tarefas.Remove(RemoverTarefa);
-                        Formatacao.Cor($"Tarefa '{RemoverTarefa.Descricao}' removida com sucesso!", ConsoleColor.Red);
+                        Formatacao.Cor($"Tarefa '{RemoverTarefa.Descricao}' removida com sucesso!", ConsoleColor.Red);//O usuário vai alterar a cor da descrição
                     }
                     else
                     {
-                        Console.WriteLine("Tarefa não encontrada.");
+                        Console.WriteLine("Tarefa não encontrada.");//impressão da mensagem
                     }
                 }
                 else
                 {
-                    Console.WriteLine("ID inválido. Digite um número válido.");
+                    Console.WriteLine("ID inválido. Digite um número válido.");//impressão da mensagem
                 }
             }
 
@@ -92,7 +92,7 @@ namespace GerenciarTarefa
         }
         public static void Sair()
         {
-            Formatacao.Cor("Saindo...", ConsoleColor.Red);
+            Formatacao.Cor("Saindo...", ConsoleColor.Red);//impressão e modificação de cor da mensagem.
         }
     }
 
