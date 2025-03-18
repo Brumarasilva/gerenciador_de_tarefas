@@ -38,7 +38,7 @@ namespace GerenciarTarefa
                 Console.Write("Digite o ID da tarefa que deseja concluir: ");//o Console.WriteLine vai imprimir a mensagem para o usuário na hora que estiver rodando
 
                 // Lendo o ID do usuário
-                if (int.TryParse(Console.ReadLine(), out int idTarefa))
+                if (int.TryParse(Console.ReadLine(), out int idTarefa))//essa parte vai permitir que, na hora que o código estiver rodando, o usuário consiga escrever as tarefas, e com isso elas vão ser numeradas.
                 {
                     // Agora a busca está correta
                     Tarefa tarefa = tarefas.FirstOrDefault(t => t.Id == idTarefa);
